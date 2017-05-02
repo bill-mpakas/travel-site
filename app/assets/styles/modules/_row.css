@@ -30,14 +30,15 @@
     padding-right: 45px;
   }
 
-  &____b-margin-until-medium {
+  &__b-margin-until-medium {
     margin-bottom: 1rem;
   }
 
   @mixin atMedium {
-    &____b-margin-until-medium {
-        margin-bottom: 1rem;
-      }
+
+    &__b-margin-until-medium {
+      margin-bottom: 0;
+    }
 
     &__medium-4 {
       float: left;
@@ -61,12 +62,14 @@
     &__medium-8--smaller {
       width: 63%;
     }
+
   }
 
   @mixin atLarge {
-    &____b-margin-until-medium {
-        margin-bottom: 1rem;
-      }
+
+    &__b-margin-until-large {
+      margin-bottom: 0;
+    }
 
     &__large-4 {
       float: left;
@@ -90,10 +93,10 @@
     &__large-8--smaller {
       width: 63%;
     }
+
   }
-
-  /* Begin Equal height rules */
-
+  
+  /* Begin Equal Height Rules */
   &--equal-height-at-medium {
     @mixin atMedium {
       display: flex;
@@ -103,6 +106,7 @@
       float: none;
       display: flex;
     }
+
   }
 
   &--equal-height-at-large {
@@ -114,7 +118,7 @@
       float: none;
       display: flex;
     }
-  }
 
+  }
 
 }
